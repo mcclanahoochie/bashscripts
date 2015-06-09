@@ -9,11 +9,11 @@ sudo port clean --all installed
 sudo port -f uninstall inactive
 
 # —— extra clean —— 
-#Remove leftover build files (this is done automatically by default):
+#Remove leftover build files:
 sudo rm -rf /opt/local/var/macports/build/*
 #Remove download files:
 sudo rm -rf /opt/local/var/macports/distfiles/*
-#Remove archives (these aren't created by default):
+#Remove archives:
 sudo rm -rf /opt/local/var/macports/packages/*
 
 # —— extra extra clean —— 
