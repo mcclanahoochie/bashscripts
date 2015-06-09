@@ -17,6 +17,7 @@ sudo rm -rf /opt/local/var/macports/distfiles/*
 sudo rm -rf /opt/local/var/macports/packages/*
 
 # —— extra extra clean —— 
+#Remove dependencies of uninstalled ports
 sudo port -f uninstall leaves
 
 # —— stats —— 
