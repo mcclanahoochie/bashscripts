@@ -16,6 +16,9 @@ sudo rm -rf /opt/local/var/macports/distfiles/*
 #Remove archives (these aren't created by default):
 sudo rm -rf /opt/local/var/macports/packages/*
 
+# —— extra extra clean —— 
+sudo port -f uninstall leaves
+
 # —— stats —— 
 after=`du -sh /opt`
 echo 'before ' $before
