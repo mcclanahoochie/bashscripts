@@ -4,7 +4,7 @@
 before=`du -sh /opt`
 
 # —— normal clean —— 
-#Remove leftovers:
+#Remove misc leftover data:
 sudo port clean --all installed
 sudo port -f uninstall inactive
 
@@ -17,7 +17,7 @@ sudo rm -rf /opt/local/var/macports/distfiles/*
 sudo rm -rf /opt/local/var/macports/packages/*
 
 # —— extra extra clean —— 
-#Remove dependencies of uninstalled ports
+#Remove dependencies of uninstalled ports:
 sudo port -f uninstall leaves
 
 # —— stats —— 
